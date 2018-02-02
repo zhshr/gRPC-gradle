@@ -1,0 +1,9 @@
+option java_package = "us.acgn.grpc";
+
+service Service {
+  rpc GetFeature(Point) returns (Point) {}
+}
+
+message Point {
+  optional string value = 1;
+}
