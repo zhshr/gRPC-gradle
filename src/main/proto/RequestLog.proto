@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "us.acgn.grpc";
+
+message RequestLog {
+  string channel_short_id = 1;
+  string client_ip = 2;
+  string method_name = 3;
+  string request_type = 4;
+
+  map<string, string> attributes = 17;
+  map<string, string> headers = 18;
+}

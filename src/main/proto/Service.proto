@@ -1,3 +1,5 @@
+syntax = "proto3";
+
 option java_package = "us.acgn.grpc";
 
 service Service {
@@ -5,5 +7,5 @@ service Service {
 }
 
 message Point {
-  optional string value = 1;
+  string value = 1;
 }
